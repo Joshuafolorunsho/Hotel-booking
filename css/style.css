@@ -95,22 +95,60 @@ footer {
 }
 
 .px-sm {
-padding: 1.5rem 0;
+	padding: 1.5rem 0;
 }
 
 .px-md {
-padding: 2rem 0;
+	padding: 2rem 0;
 }
 
 .px-lg {
-padding: 2.5rem 0;
+	padding: 2.5rem 0;
 }
 
 .px-hg {
-   padding: 3rem 0;
+	padding: 3rem 0;
 }
 
+.mb-sm {
+	margin-bottom: 1.5rem;
+}
 
+.mb-md {
+	margin-bottom: 2rem;
+}
+
+.mb-lg {
+	margin-bottom: 2.5rem;
+}
+
+.mb-hg {
+	margin-bottom: 3rem;
+}
+
+.pr-sm {
+   padding-right: 1rem;
+}
+
+.flex {
+   display: flex;
+}
+
+.align-self-start {
+	align-self: flex-start;
+}
+
+.justify-content-between {
+   justify-content: space-between;
+}
+
+.align-items-center {
+   align-items: center;
+}
+
+.line-height-md {
+   line-height: 1.8;
+}
 
 img {
 	max-width: 100%;
@@ -182,12 +220,12 @@ ul li a {
 
 footer {
 	background-color: #0a223e;
-   color: #fff;
-   font-size: 1.7rem;
+	color: #fff;
+	font-size: 1.7rem;
 }
 
 footer nav {
-	margin: 2.5rem 0;
+	margin: 2.5rem 0 .5rem 0;
 }
 
 footer ul li {
@@ -208,9 +246,78 @@ footer .bottom-footer {
 	gap: 10px;
 }
 
+
+.logo {
+   font-family: 'Luckiest Guy', cursive;
+}
+
+
+.logo span {
+   color: #ec1f46;
+}
+
+footer .logo h1 {
+	font-size: 6rem;
+}
+
+.social-network {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .form input[type=text],
+footer .form textarea{
+   width: 100%;
+   height: 3.8rem;
+   padding: 1.3rem 2rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+   font-size: inherit;
+   font-family: muli, sans-serif;
+   color: #BDBDBD;
+}
+
+
+footer .form textarea {
+   height: 13rem;
+}
+
+footer .form input[type=submit] {
+   background-color: #EC1F46;
+   color: #fff;
+   padding: 1.8rem 4rem;
+   border: none;
+}
+
+footer .disclaimer {
+   position: relative;
+}
+
+footer .disclaimer img {
+   position: absolute;
+   right: 0;
+}
+
+
 @media (min-width: 400px) {
 	.full-other-package {
 		grid-column: 1 / 3;
+	}
+
+	.top-footer-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+   }
+   
+}
+
+@media (max-width: 650px) {
+	.top-footer-info {
+		justify-content: space-around;
 	}
 }
 
@@ -255,6 +362,7 @@ footer .bottom-footer {
 	footer .top-footer,
 	footer .bottom-footer {
 		grid-template-columns: repeat(2, minmax(300px, 1fr));
+		gap: 40px;
 	}
 }
 
@@ -262,5 +370,10 @@ footer .bottom-footer {
 	.packages,
 	.other-packages {
 		gap: 35px;
+	}
+
+	footer .top-footer,
+	footer .bottom-footer {
+		gap: 100px;
 	}
 }
