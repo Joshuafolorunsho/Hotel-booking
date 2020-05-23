@@ -4,10 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Hotel Booking - Book your favourite hotel</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Muli&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Muli:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
@@ -212,11 +210,13 @@
          <div class="container">
             <nav>
                <div class="top-footer">
-                  <div>
+                  <div class="top-footer-info">
                      <div class="logo">
-                        BEST <span>TOUR</span> PLAN
+                        <h1>
+                           BEST <br> <span>TOUR</span> <br> PLAN
+                        </h1>
                      </div>
-                     <div>
+                     <div class="align-self-start">
                         <h4 class="text-uppercase heading-3 px-hg">all categories</h4>
                         <ul>
                            <li><a href="">All Deals</a></li>
@@ -230,67 +230,79 @@
                         </ul>
                      </div>
                   </div>
-                  <div>
-                     <h4 class="text-uppercase heading-3 px-hg">additional information</h4>
-                     <ul>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">How does it work?</a></li>
-                        <li><a href="">Frequently Asked Questions</a></li>
-                        <li><a href="">Deals.mu loyalty program</a></li>
-                        <li><a href="">Promote your Business on BTP</a></li>
-                        <li><a href="">Fitness</a></li>
-                     </ul>
-                     <div class="social-network">
-                        <h4 class="text-uppercase heading-3 px-hg">Social network</h4>
-                        <a href="#">F</a>
-                        <a href="#">Y</a>
-                        <a href="#">I</a>
+                  <div class="top-footer-info">
+                     <div>
+                        <h4 class="text-uppercase heading-3 px-hg">additional information</h4>
+                        <ul>
+                           <li><a href="">About Us</a></li>
+                           <li><a href="">Contact Us</a></li>
+                           <li><a href="">How does it work?</a></li>
+                           <li><a href="">Frequently Asked Questions</a></li>
+                           <li><a href="">Deals.mu loyalty program</a></li>
+                           <li><a href="">Promote your Business on BTP</a></li>
+                           <li><a href="">Fitness</a></li>
+                        </ul>
+                        <div class="social-network">
+                           <h4 class="text-uppercase heading-3 px-hg">Social network</h4>
+                          <i class="fa fa-facebook"></i>
+                          <i class="fa fa-youtube"></i>
+                          <i class="fa fa-instagram"></i>
+                        </div>
+                     </div>
+                     <div class="align-self-start">
+                        <h4 class="text-uppercase heading-3 px-hg">Legal Information</h4>
+                        <ul>
+                           <li><a href="">Terms & Conditions</a></li>
+                           <li><a href="">Disclaimer</a></li>
+                           <li><a href="">Cancellation policy</a></li>
+                           <li><a href="">Privacy</a></li>
+                        </ul>
                      </div>
                   </div>
+   
                </div>
                <div class="bottom-footer">
                   <div class="contact-details">
-                     <p>Feel free to contact us by phone, email or by our contact form</p>
-                     <div>
-                        <span>L</span>
+                     <p class="mb-md">Feel free to contact us by phone, email or by our contact form</p>
+                     <div class="flex mb-md">
+                        <span><i class="pr-sm fa fa-location-arrow line-height-md"></i></span>
                         <p>
                            9748 Blossom Hill Rd undefined Lansing, idaho 68545 United States
                         </p>
                      </div>
-                     <div>
-                        <span>C</span>
+                     <div class="flex  mb-md justify-content-between line-height-md">
+                        <span><i class="pr-sm fa fa-phone"></i></span>
                         <div>
                            <p>Tel (business hours) : 269 1500</p>
                            <p>Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am - 20:00 pm)</p>
                            <p>Tel (hotline) Sunday: 52-56-61-38 (08:00 am - 14:00 pm)</p>
                         </div>
                      </div>
-                     <div>
-                        <span>E</span>
-                        <p>
+                     <div class="flex  mb-md line-height-md">
+                        <span><i class="pr-sm fa fa-envelope"></i></span>
+                        <span>
                            cherly.lawson@example.com
-                        </p>
+                        </span>
                      </div>
                   </div>
                   <div>
                      <h4 class="text-uppercase  heading-3 px-hg px-hg">send us message</h4>
-                     <form action="#">
-                        <input type="text" placeholder="Your Full Name*" name="full-name">
-                        <input type="text" placeholder="Phone Number*" name="phone-no">
+                     <form action="#" class="form">
+                        <input class="mb-md" type="text" placeholder="Your Full Name*" name="full-name">
+                        <input class="mb-md" type="text" placeholder="Phone Number*" name="phone-no">
                         <div>
-                           <textarea name="message" placeholder="Message"></textarea>
+                           <textarea class="mb-md" name="message" placeholder="Message"></textarea>
                         </div>
-                        <div>
+                        <div class="flex justify-content-between align-items-center mb-hg">
                            <input type="submit" value="Send">
                            <span>* Required Fields</span>
                         </div>
                      </form>
                   </div>
                </div>
-               <div>
-                  <p class="text-center">Disclaimer - Conditons of use - Cancellation policy</p>
-                  <img src="" alt="">
+               <div class="disclaimer text-center">
+                  <span>Disclaimer - Conditons of use - Cancellation policy</span>
+                  <img src="./img/partners.png" alt="">
                </div>
             </nav>
          </div>
