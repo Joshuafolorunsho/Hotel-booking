@@ -362,6 +362,7 @@ ul li a {
 }
 
 .package-full {
+	min-height: 60vh;
 	grid-column: 1 / -1;
 }
 
