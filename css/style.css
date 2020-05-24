@@ -184,7 +184,7 @@ section {
 .hotel-showcase__primary {
 	grid-column: 1/ -1;
 	grid-row: 1 / span 2;
-	background-image: url(../img/Rectangle\5svg);
+	background-image: url('../img/Rectangle\ 5.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 10px;
@@ -197,7 +197,7 @@ section {
 }
 
 .hotel-showcase__info-map {
-	background-image: url(../img/map.svg);
+	background-image: url('../img/map.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 7px;
@@ -400,16 +400,16 @@ ul li a {
 }
 
 .other-package-one {
-	background-image: url(../img/lux.png);
+	background-image: url('../img/lux.png');
 }
 .other-package-two {
-	background-image: url(../img/white\palace.png);
+	background-image: url('../img/white\ palace.png');
 }
 .other-package-three {
-	background-image: url(../img/luxury\place.png);
+	background-image: url('../img/luxury\ place.png');
 }
 .other-package-four {
-	background-image: url(../img/hotel\five\star.png);
+	background-image: url('../img/hotel\ five\ star.png');
 }
 
 .other-package > p {
@@ -435,7 +435,7 @@ ul li a {
 
 /* Newsletter */
 #newsletter {
-	background-image: url(../img/newsletter.png);
+	background-image: url('../img/newsletter.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 30vh;
@@ -504,16 +504,16 @@ ul li a {
 }
 
 .activity-one {
-	background-image: url(../img/chamarel.png);
+	background-image: url('../img/chamarel.png');
 }
 .activity-two {
-	background-image: url(../img/golf.png);
+	background-image: url('../img/golf.png');
 }
 .activity-three {
-	background-image: url(../img/tamarind\fall.png);
+	background-image: url('../img/tamarind\ fall.png');
 }
 .activity-four {
-	background-image: url(../img/blue\marine.png);
+	background-image: url('../img/hotel\ blue\ haven.png');
 }
 
 /* footer */
