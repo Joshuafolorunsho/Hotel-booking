@@ -46,6 +46,7 @@ body {
 	display: inline-block;
 	animation: bouncer cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.75s infinite
 		alternate;
+	border-radius: 50%;
 }
 .square:nth-child(1) {
 	background-color: #055d8c;
@@ -184,7 +185,7 @@ section {
 .hotel-showcase__primary {
 	grid-column: 1/ -1;
 	grid-row: 1 / span 2;
-	background-image: url('../img/Rectangle\ 5.svg');
+	background-image: url('../img/Slider-min.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 10px;
@@ -400,16 +401,16 @@ ul li a {
 }
 
 .other-package-one {
-	background-image: url('../img/lux.png');
+	background-image: url('../img/lux-min.png');
 }
 .other-package-two {
-	background-image: url('../img/white\ palace.png');
+	background-image: url('../img/white\ palace-min.png');
 }
 .other-package-three {
-	background-image: url('../img/luxury\ place.png');
+	background-image: url('../img/luxury\ place-min.png');
 }
 .other-package-four {
-	background-image: url('../img/hotel\ five\ star.png');
+	background-image: url('../img/hotel\ five\ star-min.png');
 }
 
 .other-package > p {
@@ -504,16 +505,16 @@ ul li a {
 }
 
 .activity-one {
-	background-image: url('../img/chamarel.png');
+	background-image: url('../img/chamarel-min.png');
 }
 .activity-two {
-	background-image: url('../img/golf.png');
+	background-image: url('../img/golf-min.png');
 }
 .activity-three {
-	background-image: url('../img/tamarind\ fall.png');
+	background-image: url('../img/tamarind\ fall-min.png');
 }
 .activity-four {
-	background-image: url('../img/hotel\ blue\ haven.png');
+	background-image: url('../img/hotel\ five\ star-min.png');
 }
 
 /* footer */
