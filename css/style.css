@@ -431,7 +431,8 @@ ul li a {
 	border-bottom-right-radius: 7px;
 }
 
-.other-packages {
+.full-other-package {
+	background-color: #0a223d;
 }
 
 /* Newsletter */
