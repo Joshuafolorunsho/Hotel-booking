@@ -438,6 +438,7 @@ ul li a {
 }
 
 .full-other-package {
+	grid-column: 1 / span 2;
 	background-color: #0a223d;
 }
 
@@ -617,7 +618,7 @@ footer .disclaimer img {
 	.full-other-package {
 		grid-column: 1 / 3;
 	}
-	
+
 	.hotel-showcase__info {
 		display: grid;
 		gap: 1rem;
