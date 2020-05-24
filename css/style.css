@@ -118,6 +118,10 @@ section {
 	position: relative;
 }
 
+.profile {
+	display: none;
+}
+
 .nav-top input {
 	width: 220px;
 	height: 40px;
@@ -638,6 +642,11 @@ footer .disclaimer img {
 }
 
 @media (min-width: 768px) {
+	.profile {
+		display: flex;
+		align-items: center;
+	}
+
 	.flex {
 		display: flex;
 	}
