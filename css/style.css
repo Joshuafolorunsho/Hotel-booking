@@ -19,6 +19,60 @@ body {
 	grid-template-rows: repeat(9, min-content);
 }
 
+/*Loader*/
+#loader {
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: ease;
+}
+
+#loader.none {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.square {
+	width: 11px;
+	height: 11px;
+	margin: 11px;
+	display: inline-block;
+	animation: bouncer cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.75s infinite
+		alternate;
+}
+.square:nth-child(1) {
+	background-color: #055d8c;
+}
+.square:nth-child(2) {
+	background-color: #077cbb;
+	animation-delay: 0.1s;
+}
+.square:nth-child(3) {
+	background-color: #099cea;
+	animation-delay: 0.2s;
+}
+.square:nth-child(4) {
+	background-color: #3aafee;
+	animation-delay: 0.3s;
+}
+.square:nth-child(5) {
+	background-color: #9cd7f6;
+	animation-delay: 0.4s;
+}
+
+@keyframes bouncer {
+	100% {
+		transform: scale(1.75) translateY(-20px);
+	}
+}
+
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
@@ -40,7 +94,7 @@ footer {
 }
 
 section {
-	background-color: #F5FAFE;
+	background-color: #f5fafe;
 }
 
 .top-info_second-item {
@@ -100,7 +154,6 @@ section {
 	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
 
-
 .nav-bottom ul li a {
 	color: #fff;
 }
@@ -109,13 +162,11 @@ section {
 	text-decoration: underline;
 }
 
-
-
 /* Hotel showcase */
 
 .hotel-showcase__info {
 	display: grid;
-   gap: 1rem;
+	gap: 1rem;
 	grid-template-columns: 1fr;
 	min-height: 60vh;
 	grid-template-rows: 30vh 30vh;
@@ -133,12 +184,11 @@ section {
 .hotel-showcase__primary {
 	grid-column: 1/ -1;
 	grid-row: 1 / span 2;
-	background-image: url(../img/Rectangle\ 5.svg);
+	background-image: url(../img/Rectangle\5svg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 10px;
 }
-
 
 .hotel-showcase__info-cta {
 	margin-top: 5%;
@@ -266,7 +316,6 @@ section {
 	line-height: 1.8;
 }
 
-
 img {
 	max-width: 100%;
 }
@@ -305,7 +354,6 @@ ul li a {
 	height: 160px;
 }
 
-
 .package-full {
 	grid-column: 1 / -1;
 }
@@ -323,7 +371,6 @@ ul li a {
 	padding-bottom: 5px;
 }
 
-
 .offers li a {
 	color: #333333;
 	font-weight: bold;
@@ -331,8 +378,8 @@ ul li a {
 
 .offers .active {
 	text-align: left;
-	color: #EC1F46;
-	border-bottom: 4px solid #EC1F46;
+	color: #ec1f46;
+	border-bottom: 4px solid #ec1f46;
 }
 
 .other-packages {
@@ -560,7 +607,6 @@ footer .disclaimer img {
 	}
 }
 
-
 @media (min-width: 568) {
 	.hotel-showcase__info {
 		display: grid;
@@ -570,7 +616,6 @@ footer .disclaimer img {
 		grid-template-rows: 30vh 30vh;
 	}
 }
-
 
 @media (max-width: 650px) {
 	.top-footer-info {
