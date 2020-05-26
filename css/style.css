@@ -629,6 +629,12 @@ footer .disclaimer img {
 	}
 }
 
+@media (max-width: 470px) {
+	.other-package {
+		grid-column: 1 / span 2;
+	}
+}
+
 @media (max-width: 650px) {
 	.top-footer-info {
 		justify-content: space-around;
