@@ -296,6 +296,7 @@ section {
 	border: none;
 	padding: 0.6rem 2rem;
 	color: #fff;
+	cursor: pointer;
 }
 
 .btn-primary {
