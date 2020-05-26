@@ -124,7 +124,7 @@ section {
 }
 
 .nav-top input {
-	width: 220px;
+	width: 250px;
 	height: 40px;
 	border: none;
 	border: 2px solid #f5fafe;
@@ -296,10 +296,16 @@ section {
 	border: none;
 	padding: 0.6rem 2rem;
 	color: #fff;
+	cursor: pointer;
 }
 
 .btn-primary {
 	background-color: #ec1f46;
+	transition: all .3s ease-in-out;
+}
+
+.btn-primary:hover {
+	background-color: #ff0331;
 }
 
 .flex-all {
@@ -626,6 +632,12 @@ footer .disclaimer img {
 		grid-template-columns: 1fr 1fr;
 		min-height: 60vh;
 		grid-template-rows: 30vh 30vh;
+	}
+}
+
+@media (max-width: 470px) {
+	.other-package {
+		grid-column: 1 / span 2;
 	}
 }
 
