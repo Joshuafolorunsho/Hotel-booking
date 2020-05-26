@@ -301,6 +301,11 @@ section {
 
 .btn-primary {
 	background-color: #ec1f46;
+	transition: all .3s ease-in-out;
+}
+
+.btn-primary:hover {
+	background-color: #ff0331;
 }
 
 .flex-all {
