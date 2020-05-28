@@ -308,6 +308,15 @@ section {
 	cursor: pointer;
 }
 
+input {
+	outline: none;
+}
+
+input:focus {
+	box-shadow: .5rem .3rem .3rem #ec1f449a;
+}
+
+
 .btn-primary {
 	background-color: #ec1f46;
 	transition: all .3s ease-in-out;
