@@ -49,24 +49,21 @@ body {
 	border-radius: 50%;
 }
 .square:nth-child(1) {
-	background-color: #055d8c;
+	background-color: #F1627C;
 }
 .square:nth-child(2) {
-	background-color: #077cbb;
+	background-color: #EF4B69;
 	animation-delay: 0.1s;
 }
 .square:nth-child(3) {
-	background-color: #099cea;
+	background-color: 	#BC1836;
 	animation-delay: 0.2s;
 }
 .square:nth-child(4) {
-	background-color: #3aafee;
+	background-color: #ED3556;
 	animation-delay: 0.3s;
 }
-.square:nth-child(5) {
-	background-color: #9cd7f6;
-	animation-delay: 0.4s;
-}
+
 
 @keyframes bouncer {
 	100% {
@@ -220,11 +217,11 @@ section {
 }
 
 .heading-1 {
-	font-size: 3rem;
+	font-size: 3.5rem;
 }
 
 .heading-2 {
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 
 .heading-3 {
@@ -275,6 +272,10 @@ section {
 	margin-bottom: 3rem;
 }
 
+.mb-xhg {
+	margin-bottom: 8rem;
+}
+
 .pr-sm {
 	padding-right: 1rem;
 }
@@ -314,7 +315,7 @@ section {
 
 
 .align-self-start {
-	align-self: flex-start;
+	align-self: start;
 }
 
 .justify-content-between {
@@ -348,7 +349,7 @@ ul li a {
 
 .package,
 .package-full {
-	width: 100%;
+	width: 95%;
 	min-height: 200px;
 	background-color: #fff;
 }
@@ -363,8 +364,11 @@ ul li a {
 }
 
 .package-body {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 3rem;
 	padding: 1rem;
-	height: 160px;
+	min-height: 160px;
 }
 
 .package-full {
@@ -447,6 +451,144 @@ ul li a {
 .full-other-package {
 	grid-column: 1 / span 2;
 	background-color: #0a223d;
+}
+
+
+.package-summery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 3rem;
+	padding: 3rem;
+}
+
+
+.package-summery h5 {
+	font-size: 1.5rem;
+	color: #EC1F46
+}
+
+#carousel .animate {
+	animation: animate 1s;
+}
+
+@keyframes slide-over {
+	from {
+		opacity: 0;
+	}
+	to {
+	opacity: 100%;
+	}
+}
+
+#carousel {
+	max-width: 900px;
+	height: 350px;
+	margin: 50px auto 0;
+	position: relative;
+}
+
+
+#carousel .slides .hero {
+	margin: auto;
+	min-height: 200px;
+	max-width: 731px;
+	background-color: #fff;
+	border-radius: 8px;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: justify;
+}
+
+.customer__img {
+	position: absolute;
+	top: -43px;
+	z-index: 20;
+}
+
+.customer__name {
+	font-size: 1.5rem;
+	color: #ec1f46;
+	margin: 1.5rem 0;
+}
+
+
+#carousel .hero-nav {
+	color: white;
+	cursor: pointer;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+				 #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+	transform: translate(0, -50%);
+}
+
+
+#carousel .prev {
+	left: 5px;
+}
+
+
+#carousel .next {
+	right: 5px;
+}
+
+
+.button-container {
+	margin: 19px auto;
+	text-align: center;
+}
+
+
+.button {
+	border-radius: 7px;
+	background: #007ad6;
+	height: 41px;
+	width: 100%;
+	padding: 2px;
+	position: relative;
+}
+
+
+.button .glare {
+	border-radius: 7px;
+	background: #40a7f4;
+	height: 20px;
+	width: 100%;
+}
+
+.button .icon {
+	border-left: 2px solid #83beea;
+	height: 35px;
+	width: 27px;
+	position: absolute;
+	top: 3px;
+	right: 14px;
+}
+
+
+.button .icon img {
+	margin: 4px 0 0 3px;
+}
+
+
+.button .text {
+	color: white;
+	float: right;
+	font-size: 15px;
+	text-shadow: 0 0 2px black;
+	text-transform: uppercase;
+	position: absolute;
+	margin: 0 auto;
+	top: 15px;
+	left: 12px;
+}
+
+
+.button .without-icon {
+	left: 21.5%;
 }
 
 /* Newsletter */
@@ -618,6 +760,20 @@ footer .disclaimer img {
 		justify-content: space-between;
 		align-items: center;
 	}
+
+	#carousel .hero-nav {
+		top: 35%;
+	}
+
+	#carousel {
+		min-height: 250px;
+	}
+	
+	
+	#carousel .slides .hero {
+		
+		min-height: 250px;
+	}	
 }
 
 @media (min-width: 568) {
@@ -695,6 +851,9 @@ footer .disclaimer img {
 		grid-row: 1 / span 2;
 	}
 
+	#carousel .slides .hero .paragraph{
+		padding: 1.5rem 8rem;}
+
 	.packages {
 		grid-template-columns: repeat(2, minmax(300px, 1fr));
 	}
@@ -703,6 +862,8 @@ footer .disclaimer img {
 		grid-template-columns: repeat(3, minmax(200px, 1fr));
 		gap: 8px;
 	}
+
+	
 
 	footer .top-footer,
 	footer .bottom-footer {
