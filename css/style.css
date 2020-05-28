@@ -451,6 +451,7 @@ ul li a {
 
 .full-other-package {
 	grid-column: 1 / span 2;
+	overflow: hidden;
 	color: #fff;
 	background-color: #0a223d;
 }
