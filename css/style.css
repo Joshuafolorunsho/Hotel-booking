@@ -221,7 +221,7 @@ section {
 }
 
 .heading-2 {
-	font-size: 3rem;
+	font-size: 2.7rem;
 }
 
 .heading-3 {
@@ -408,7 +408,7 @@ ul li a {
 
 .other-package {
 	color: #fff;
-	height: 50vh;
+	min-height: 50vh;
 	width: 100%;
 	border-radius: 7px;
 	background-size: cover;
@@ -416,6 +416,7 @@ ul li a {
 	position: relative;
 	line-height: 1.4;
 }
+
 
 .other-package-one {
 	background-image: url('../img/lux-min.png');
@@ -450,7 +451,17 @@ ul li a {
 
 .full-other-package {
 	grid-column: 1 / span 2;
+	color: #fff;
 	background-color: #0a223d;
+}
+
+.full-other-package .offer {
+	display: none;
+}
+
+.full-other-package__info {
+	height: 100%;
+	padding: 2rem;
 }
 
 
@@ -506,6 +517,8 @@ ul li a {
 	top: -43px;
 	z-index: 20;
 }
+
+
 
 .customer__name {
 	font-size: 1.5rem;
@@ -662,16 +675,16 @@ ul li a {
 }
 
 .activity-one {
-	background-image: url('../img/chamarel-min.png');
+	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, 0.8)), url('../img/chamarel-min.png');
 }
 .activity-two {
-	background-image: url('../img/golf-min.png');
+	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, 0.8)), url('../img/golf-min.png');
 }
 .activity-three {
-	background-image: url('../img/tamarind\ fall-min.png');
+	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, 0.8)), url('../img/tamarind\ fall-min.png');
 }
 .activity-four {
-	background-image: url('../img/hotel\ five\ star-min.png');
+	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, 0.8)), url('../img/hotel\ five\ star-min.png');
 }
 
 /* footer */
@@ -776,7 +789,8 @@ footer .disclaimer img {
 	}	
 }
 
-@media (min-width: 568) {
+@media (min-width: 568px) {
+
 
 	.full-other-package {
 		grid-column: 1 / 3;
@@ -789,6 +803,28 @@ footer .disclaimer img {
 		min-height: 60vh;
 		grid-template-rows: 30vh 30vh;
 	}
+
+	.full-other-package .btn {
+		display: block;
+	}
+
+	.full-other-package__img {
+		background-image: url('../img/beach.png');
+		background-size: cover;
+		width: 50%;
+	}
+	.full-other-package__info {
+		height: 100%;
+		width: 50%;
+	}
+	
+	
+	.full-other-package__img p {
+		position: relative;
+		top: 20px;
+		width: 135px;
+	}
+	
 }
 
 @media (max-width: 470px) {
@@ -816,6 +852,7 @@ footer .disclaimer img {
 }
 
 @media (min-width: 768px) {
+
 	.cart {
 		display: block;
 	}
