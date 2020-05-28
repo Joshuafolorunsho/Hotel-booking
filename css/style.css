@@ -193,6 +193,10 @@ section {
 	border-radius: 10px;
 }
 
+.home-showcase__info-secondary-pricing {
+	line-height: 1.5;
+}
+
 .hotel-showcase__info-cta {
 	margin-top: 5%;
 	width: 100%;
