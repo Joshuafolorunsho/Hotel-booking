@@ -134,6 +134,7 @@ section {
 .nav-top button {
 	height: 40px;
 	position: absolute;
+	top: 0;
 	left: 200px;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
@@ -150,7 +151,7 @@ section {
 }
 
 .nav-bottom ul {
-	min-height: 8vh;
+	min-height: 5vh;
 	display: grid;
 	align-items: center;
 	gap: 8px;
@@ -182,6 +183,9 @@ section {
 	border-radius: 7px;
 	padding: 2rem;
 	line-height: 1.8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .hotel-showcase__primary {
@@ -303,6 +307,15 @@ section {
 	color: #fff;
 	cursor: pointer;
 }
+
+input {
+	outline: none;
+}
+
+input:focus {
+	box-shadow: .5rem .3rem .3rem #ec1f449a;
+}
+
 
 .btn-primary {
 	background-color: #ec1f46;
@@ -648,6 +661,7 @@ ul li a {
 
 .newsletter button {
 	position: absolute;
+	top: 0;
 	left: 220px;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
