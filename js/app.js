@@ -1,22 +1,33 @@
 window.addEventListener('load', () => {
    loader.classList.add('none');
+   document.body.classList.remove('hide-scroll-bar');
+});
+
+
+const ul = document.querySelector('header ul');
+
+const hamburger = document.querySelector('.hamburger-icon');
+
+hamburger.addEventListener('click', () => {
+   ul.classList.toggle('show');
+   hamburger.classList.toggle('show');
 });
 
 
 // global variables
 // hero carousel
-var currentIndex = 0;
-var previousSlideIndex = 0;
+let currentIndex = 0;
+let previousSlideIndex = 0;
 
-var slides = document.getElementsByClassName('slides');
+let slides = document.getElementsByClassName('slides');
 
-var heroPrev = document.getElementById('heroPrev');
-var heroNext = document.getElementById('heroNext');
+let heroPrev = document.getElementById('heroPrev');
+let heroNext = document.getElementById('heroNext');
 
-var heroNav0 = document.getElementById('heroNav0');
-var heroNav1 = document.getElementById('heroNav1');
-var heroNav2 = document.getElementById('heroNav2');
-var heroNavBtns = document.getElementsByClassName('hero-radio-button');
+let heroNav0 = document.getElementById('heroNav0');
+let heroNav1 = document.getElementById('heroNav1');
+let heroNav2 = document.getElementById('heroNav2');
+let heroNavBtns = document.getElementsByClassName('hero-radio-button');
 
 
 // load event listeners when the DOM is loaded

@@ -34,6 +34,10 @@ body {
 	transition: ease;
 }
 
+.hide-scroll-bar {
+	overflow-y: hidden;
+}
+
 #loader.none {
 	visibility: hidden;
 	opacity: 0;
@@ -174,11 +178,66 @@ section {
 
 .nav-bottom ul {
 	min-height: 5vh;
-	display: grid;
+	display: none;
 	align-items: center;
 	gap: 8px;
 	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
+
+/**Hamburger ICON **/
+.hamburger-icon {
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+	cursor: pointer;
+}
+
+.hamburger-line-1,
+.hamburger-line-2,
+.hamburger-line-3 {
+	background-color: #fff;
+	width: 2.2rem;
+	height: 0.2rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.hamburger-line-1,
+.hamburger-line-2 {
+	margin-bottom: 6px;
+}
+
+/* Show class to  change the state of hambuger icon cross*/
+.show .hamburger-line-1 {
+	transform: translateY(8.2px) rotate(135deg);
+}
+
+.show .hamburger-line-2 {
+	opacity: 0;
+}
+
+.show .hamburger-line-3 {
+	transform: translateY(-7.6px) rotate(-135deg);
+}
+
+/*Show */
+
+header ul.show {
+	position: relative;
+	background-color: #0a223e;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul.show li {
+	margin: 1rem 0;
+}
+
+
 
 .nav-bottom ul li a {
 	color: #fff;
@@ -381,7 +440,8 @@ input {
 	outline: none;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
 	box-shadow: 0.5rem 0.3rem 0.3rem #ec1f449a;
 }
 
@@ -400,6 +460,10 @@ input:focus {
 
 .align-self-start {
 	align-self: start;
+}
+
+.justify-content-center {
+	justify-content: center;
 }
 
 .justify-content-between {
@@ -862,9 +926,19 @@ footer .disclaimer img {
 }
 
 @media (min-width: 568px) {
+
+	.nav-bottom ul {
+		display: grid;
+	}
+
+	.hamburger-icon {
+		display: none;
+	}
+
 	.full-other-package {
 		grid-column: 1 / 3;
 	}
+
 
 	.hotel-showcase__info {
 		gap: 1rem;
