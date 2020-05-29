@@ -1,5 +1,16 @@
 window.addEventListener('load', () => {
    loader.classList.add('none');
+   document.body.classList.remove('hide-scroll-bar');
+});
+
+
+const ul = document.querySelector('header ul');
+
+const hamburger = document.querySelector('.hamburger-icon');
+
+hamburger.addEventListener('click', () => {
+   ul.classList.toggle('show');
+   hamburger.classList.toggle('show');
 });
 
 
