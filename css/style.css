@@ -213,7 +213,26 @@ section {
 	background-size: cover;
 	border-radius: 7px;
 	height: 100%;
+	position: relative;
 }
+
+.map-pin, 
+.bottom-button {
+	position: absolute;
+}
+
+.map-pin {
+	top: 3rem;
+	right: 1rem;
+}
+
+.bottom-button {
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 1rem;
+}
+
+
 
 /*Utility classes*/
 .text-uppercase {
@@ -694,16 +713,16 @@ ul li a {
 }
 
 .activity-one {
-	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, 0.8)), url('../img/chamarel-min.png');
+	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, .3)), url('../img/chamarel-min.png');
 }
 .activity-two {
-	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, 0.8)), url('../img/golf-min.png');
+	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, .3)), url('../img/golf-min.png');
 }
 .activity-three {
-	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, 0.8)), url('../img/tamarind\ fall-min.png');
+	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, .3)), url('../img/tamarind\ fall-min.png');
 }
 .activity-four {
-	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, 0.8)), url('../img/hotel\ five\ star-min.png');
+	background-image: linear-gradient(rgba(0,0,0, .3), rgba(0, 0, 0, .3)), url('../img/hotel\ five\ star-min.png');
 }
 
 /* footer */
