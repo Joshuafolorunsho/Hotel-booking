@@ -6,6 +6,12 @@
 	box-sizing: border-box;
 }
 
+/* CSS Variables  */
+
+:root {
+	--primary-color: #ec1f46;
+}
+
 html {
 	font-size: 62.5%; /*10px*/
 }
@@ -19,72 +25,13 @@ body {
 	grid-template-rows: repeat(9, min-content);
 }
 
-/*Loader*/
-#loader {
-	background-color: #fff;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	z-index: 9999;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: ease;
-}
 
-.hide-scroll-bar {
-	overflow-y: hidden;
-}
-
-#loader.none {
-	visibility: hidden;
-	opacity: 0;
-}
-
-.square {
-	width: 11px;
-	height: 11px;
-	margin: 11px;
-	display: inline-block;
-	animation: bouncer cubic-bezier(0.455, 0.03, 0.515, 0.955) 0.75s infinite
-		alternate;
-	border-radius: 50%;
-}
-.square:nth-child(1) {
-	background-color: #f1627c;
-}
-.square:nth-child(2) {
-	background-color: #ef4b69;
-	animation-delay: 0.1s;
-}
-.square:nth-child(3) {
-	background-color: #bc1836;
-	animation-delay: 0.2s;
-}
-.square:nth-child(4) {
-	background-color: #ed3556;
-	animation-delay: 0.3s;
-}
-
-@keyframes bouncer {
-	100% {
-		transform: scale(1.75) translateY(-20px);
-	}
-}
+/* Global container  */
 
 .container {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 1rem;
-}
-
-.top-info {
-	background-color: #f5fafe;
-	font-size: 1.3rem;
-	text-align: center;
-	grid-column: 1 / -1;
 }
 
 header,
@@ -94,8 +41,15 @@ footer {
 	grid-column: 1/-1;
 }
 
+.top-info,
 section {
 	background-color: #f5fafe;
+}
+
+.top-info {
+	font-size: 1.3rem;
+	text-align: center;
+	grid-column: 1 / -1;
 }
 
 .top-info_second-item {
@@ -103,10 +57,6 @@ section {
 	align-items: center;
 }
 
-.top-info_second.flex {
-	display: flex;
-	justify-content: center;
-}
 
 .nav-top {
 	display: flex;
@@ -132,7 +82,7 @@ section {
 	position: absolute;
 	top: -8px;
 	right: 3.2rem;
-	background-color: #ec1f46;
+	background-color: var(--primary-color);
 	color: #fff;
 	font-size: 9px;
 	font-weight: bold;
@@ -237,8 +187,6 @@ header ul.show li {
 	margin: 1rem 0;
 }
 
-
-
 .nav-bottom ul li a {
 	color: #fff;
 }
@@ -271,7 +219,7 @@ header ul.show li {
 
 .hotel-showcase__flash-offer,
 .user-rating {
-	background-color: #ec1f46;
+	background-color: var(--primary-color);
 	color: #fff;
 	border-radius: 4px;
 }
@@ -335,7 +283,32 @@ header ul.show li {
 	bottom: 1rem;
 }
 
-/*Utility classes*/
+/* Helper classes*/
+
+.flex-all {
+	display: flex;
+}
+
+.align-self-start {
+	align-self: start;
+}
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.justify-content-between {
+	justify-content: space-between;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.line-height-md {
+	line-height: 1.8;
+}
+
 .text-uppercase {
 	text-transform: uppercase;
 }
@@ -446,7 +419,7 @@ textarea:focus {
 }
 
 .btn-primary {
-	background-color: #ec1f46;
+	background-color: var(--primary-color);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -454,29 +427,6 @@ textarea:focus {
 	background-color: #ff0331;
 }
 
-.flex-all {
-	display: flex;
-}
-
-.align-self-start {
-	align-self: start;
-}
-
-.justify-content-center {
-	justify-content: center;
-}
-
-.justify-content-between {
-	justify-content: space-between;
-}
-
-.align-items-center {
-	align-items: center;
-}
-
-.line-height-md {
-	line-height: 1.8;
-}
 
 img {
 	max-width: 100%;
@@ -544,8 +494,8 @@ ul li a {
 
 .offers .active {
 	text-align: left;
-	color: #ec1f46;
-	border-bottom: 4px solid #ec1f46;
+	color: var(--primary-color);
+	border-bottom: 4px solid var(--primary-color);
 }
 
 .other-packages {
@@ -621,7 +571,7 @@ ul li a {
 
 .package-summery h5 {
 	font-size: 1.5rem;
-	color: #ec1f46;
+	color: var(--primary-color);
 }
 
 #carousel .animate {
@@ -665,7 +615,7 @@ ul li a {
 
 .customer__name {
 	font-size: 1.5rem;
-	color: #ec1f46;
+	color: var(--primary-color);
 	margin: 1.5rem 0;
 }
 
@@ -860,7 +810,7 @@ footer .bottom-footer {
 }
 
 .logo span {
-	color: #ec1f46;
+	color: var(--primary-color);
 }
 
 footer .logo h1 {
@@ -926,7 +876,6 @@ footer .disclaimer img {
 }
 
 @media (min-width: 568px) {
-
 	.nav-bottom ul {
 		display: grid;
 	}
@@ -938,7 +887,6 @@ footer .disclaimer img {
 	.full-other-package {
 		grid-column: 1 / 3;
 	}
-
 
 	.hotel-showcase__info {
 		gap: 1rem;
