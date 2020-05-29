@@ -10,6 +10,7 @@
 
 :root {
 	--primary-color: #ec1f46;
+	--white: #fff;
 }
 
 html {
@@ -24,7 +25,6 @@ body {
 		1fr;
 	grid-template-rows: repeat(9, min-content);
 }
-
 
 /* Global container  */
 
@@ -48,20 +48,11 @@ section {
 
 .top-info {
 	font-size: 1.3rem;
-	text-align: center;
 	grid-column: 1 / -1;
 }
 
 .top-info_second-item {
 	margin: 1rem;
-	align-items: center;
-}
-
-
-.nav-top {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
 .search-bar {
@@ -83,17 +74,12 @@ section {
 	top: -8px;
 	right: 3.2rem;
 	background-color: var(--primary-color);
-	color: #fff;
+	color: var(--white);
 	font-size: 9px;
-	font-weight: bold;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	width: 17px;
 	height: 17px;
 	border-radius: 50%;
 	padding: 2;
-	position: absolute;
 }
 
 .nav-top input {
@@ -114,12 +100,6 @@ section {
 	left: 200px;
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
-}
-
-.nav-top__secondary-part {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }
 
 .nav-bottom {
@@ -147,7 +127,7 @@ section {
 .hamburger-line-1,
 .hamburger-line-2,
 .hamburger-line-3 {
-	background-color: #fff;
+	background-color: var(--white);
 	width: 2.2rem;
 	height: 0.2rem;
 	transition: all 0.2s ease-in-out;
@@ -188,7 +168,7 @@ header ul.show li {
 }
 
 .nav-bottom ul li a {
-	color: #fff;
+	color: var(--white);
 }
 
 .nav-bottom ul li a:hover {
@@ -208,7 +188,7 @@ header ul.show li {
 .hotel-showcase__info-text {
 	height: 100%;
 	background-color: #0a223e;
-	color: #fff;
+	color: var(--white);
 	border-radius: 7px;
 	padding: 2rem;
 	line-height: 1.8;
@@ -220,7 +200,7 @@ header ul.show li {
 .hotel-showcase__flash-offer,
 .user-rating {
 	background-color: var(--primary-color);
-	color: #fff;
+	color: var(--white);
 	border-radius: 4px;
 }
 
@@ -405,7 +385,7 @@ header ul.show li {
 	border-radius: 5px;
 	border: none;
 	padding: 0.6rem 2rem;
-	color: #fff;
+	color: var(--white);
 	cursor: pointer;
 }
 
@@ -426,7 +406,6 @@ textarea:focus {
 .btn-primary:hover {
 	background-color: #ff0331;
 }
-
 
 img {
 	max-width: 100%;
@@ -449,7 +428,7 @@ ul li a {
 .package-full {
 	width: 100%;
 	min-height: 200px;
-	background-color: #fff;
+	background-color: var(--white);
 }
 
 .package-header {
@@ -458,7 +437,7 @@ ul li a {
 	border-top-right-radius: 7px;
 	padding: 1.5rem;
 	width: 100%;
-	color: #fff;
+	color: var(--white);
 }
 
 .package-body {
@@ -505,7 +484,7 @@ ul li a {
 }
 
 .other-package {
-	color: #fff;
+	color: var(--white);
 	min-height: 50vh;
 	width: 100%;
 	border-radius: 7px;
@@ -549,7 +528,7 @@ ul li a {
 .full-other-package {
 	grid-column: 1 / span 2;
 	overflow: hidden;
-	color: #fff;
+	color: var(--white);
 	background-color: #0a223d;
 }
 
@@ -598,7 +577,7 @@ ul li a {
 	margin: auto;
 	min-height: 200px;
 	max-width: 731px;
-	background-color: #fff;
+	background-color: var(--white);
 	border-radius: 8px;
 	padding: 3rem;
 	display: flex;
@@ -694,7 +673,7 @@ ul li a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 30vh;
-	color: #fff;
+	color: var(--white);
 }
 
 #newsletter .container {
@@ -754,7 +733,7 @@ ul li a {
 .activity {
 	border-radius: 6px;
 	background-size: cover;
-	color: #fff;
+	color: var(--white);
 	height: 35vh;
 	padding: 1rem;
 }
@@ -779,7 +758,7 @@ ul li a {
 /* footer */
 footer {
 	background-color: #0a223e;
-	color: #fff;
+	color: var(--white);
 	font-size: 1.7rem;
 }
 
@@ -792,7 +771,7 @@ footer ul li {
 }
 
 footer ul li a {
-	color: #fff;
+	color: var(--white);
 }
 
 footer ul li a:hover {
