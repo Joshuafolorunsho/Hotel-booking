@@ -228,6 +228,7 @@ section {
 	padding: 5px;
 	text-align: center;
 	font-size: 9px;
+	display: none;
 }
 
 .hotel-showcase__primary {
@@ -868,6 +869,10 @@ footer .disclaimer img {
 	.hotel-showcase__info {
 		gap: 1rem;
 		grid-template-columns: 1fr 1fr;
+	}
+
+	.user-rating {
+		display: block;
 	}
 
 	.map-pin,
