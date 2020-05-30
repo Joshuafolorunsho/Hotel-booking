@@ -47,9 +47,11 @@
 						<div class="logo pr-md">BEST <span>TOUR PLAN</span></div>
 						<div class="search-bar">
 							<input type="text" placeholder="Search Location" />
-							<button class="btn btn-primary">
+							<!-- Make search button accessible -->
+							<button class="btn btn-primary" aria-labelledby="id1">
 								<img src="./img/search.svg" alt="" />
 							</button>
+							<div class="hide" id="id1">Search</div>
 						</div>
 						<div class="nav-top__secondary-part flex-all align-items-center justify-content-between">
 							<div class="cart pr-hg">
