@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Hotel Booking is the one place where you can book hotels online with ease">
 		<title>Hotel Booking - Book your favourite hotel</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Muli:wght@400;700&display=swap"
@@ -46,7 +47,9 @@
 					<div class="nav-top flex-all justify-content-between align-items-center">
 						<div class="logo pr-md">BEST <span>TOUR PLAN</span></div>
 						<div class="search-bar">
-							<input type="text" placeholder="Search Location" />
+							<!-- Make input field accessible (Label will not show on the UI - This was added for accessibility purpose) -->
+							<label class="hide" for="search">Search location</label>
+							<input type="text" placeholder="Search Location" id="search" />
 							<!-- Make search button accessible -->
 							<button class="btn btn-primary" aria-labelledby="id1">
 								<img src="./img/search.svg" alt="" />
@@ -569,11 +572,13 @@
 			<div class="container">
 				<div class="newsletter">
 					<h2 class="heading-2">
-						Subcribe to your <br />
+						Subscribe to your <br />
 						<span class="text-uppercase">newsletter</span>
 					</h2>
 					<form action="#">
-						<input type="text" placeholder="Your email address" />
+						<!-- Make input field accessible (Label will not show on the UI - This was added for accessibility purpose) -->
+						<label class="hide" for="email">Enter your email address</label>
+						<input type="text" placeholder="Your email address" id="email" />
 						<button class="btn btn-primary" type="submit">Send</button>
 					</form>
 				</div>
@@ -699,17 +704,24 @@
 							<form action="#" class="form">
 								<div class="type-text-fields">
 									<div class="mb-md">
-										<input type="text" placeholder="Your Full Name*" name="full-name" />
+										<!-- Make input field accessible (Label will not show on the UI - This was added for accessibility purpose) -->
+										<label  class="hide" for="full-name">Enter your full name</label>
+										<input type="text" placeholder="Your Full Name*" name="full-name" id="full-name>
 									</div>
 									<div class="mb-md">
-										<input type="text" placeholder="Phone Number*" name="phone-no" />
+										<!-- Make input field accessible (Label will not show on the UI - This was added for accessibility purpose) -->
+										<label  class="hide" for="phone-no">Enter your phone number</label>
+										<input type="text" placeholder="Phone Number*" name="phone-no" id="phone-no" />
 									</div>
 								</div>
 								<div>
+									<!-- Make input field accessible (Label will not show on the UI - This was added for accessibility purpose) -->
+									<label  class="hide" for="message">Enter your message</label>
 									<textarea
 										class="mb-md"
 										name="message"
 										placeholder="Message"
+										id="message"
 									></textarea>
 								</div>
 								<div class="flex-all justify-content-between align-items-center mb-hg">
