@@ -102,12 +102,14 @@ section {
 	border-bottom-left-radius: 0;
 }
 
-
 /*Making the search text button accessible for screen readers*/
 .hide {
 	position: absolute;
-	top: -9999px;
-	left: -9999px;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
 }
 
 .nav-bottom {
