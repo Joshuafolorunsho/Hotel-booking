@@ -14,6 +14,10 @@ git clone https://github.com/{your-github-username}/Hotel-booking.git
 cd hotel-booking
 ```
 
+```
+git remote upstream add https://github.com/joshuafolorunsho/Hotel-booking.git
+```
+
 ```bash
 git checkout -b nameOFTheBranch
 ```
