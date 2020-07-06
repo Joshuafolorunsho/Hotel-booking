@@ -102,7 +102,7 @@ section {
 	border-bottom-left-radius: 0;
 }
 
-/*Making the search text button accessible for screen readers*/
+/*Making the hide element class accessible for screen readers*/
 .hide {
 	position: absolute;
 	height: 1px;
